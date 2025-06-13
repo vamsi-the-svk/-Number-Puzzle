@@ -8,12 +8,11 @@ tiles.forEach(tile => {
   });
 
   tile.addEventListener('dragover', function (e) {
-    e.preventDefault(); // Needed to allow drop
+    e.preventDefault(); 
   });
 
   tile.addEventListener('drop', function () {
     if (dragged !== this) {
-      // Swap contents
       let temp = this.innerHTML;
       this.innerHTML = dragged.innerHTML;
       dragged.innerHTML = temp;
