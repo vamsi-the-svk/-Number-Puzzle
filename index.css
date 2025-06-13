@@ -1,0 +1,26 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  background: linear-gradient(90deg,#89f7fe,#66a6ff);
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  cursor: move;
+}
+
